@@ -187,11 +187,11 @@ header nav .form i {
     color: white;
     display: flex;
     justify-content: flex-end;
-    transform: translateY(-505);
-    -webkit-transform: translateY(-505);
-    -moz-transform: translateY(-505);
-    -ms-transform: translateY(-505);
-    -o-transform: translateY(-505);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .landing .overlay .text .content {
@@ -208,4 +208,63 @@ header nav .form i {
 .landing .overlay .text .content p {
     font-size: 14px;
     line-height: 2;
+}
+
+.landing .change-background {
+    position: absolute;
+    top: 50%;
+    color: white;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+@media(max-width : 767px) {
+    .landing .overlay .text {
+        width: 100%;
+    }
+
+    .landing .overlay .text .content {
+        max-width: 100%;
+    }
+
+    .landing .change-background {
+        display: none;
+    }
+}
+
+.landing .left {
+    left: 30px;
+}
+
+.landing .right {
+    right: 30px;
+}
+
+.landing .bullets {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.landing .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
